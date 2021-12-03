@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <style>
+            #div1{
+                width: 500px;
+                height:500px;
+            }
+        </style>
+    </head>
+   <body>
+       <div id="div1" >
+           <form action="#">
+         <input id="FF" name="fromSource" type="text" placeholder="enter from source" required> <br><br>
+         <input id="TT" name="ToDestination" type="text" placeholder="enter  to destination" required><br> <br>
+         <input id="btn" name="sub" type="button"  value="submit" onclick="fun()"> <br> <br>
+        </form>
+       </div>
+
+       <script>
+           function fun(){
+               var frmS=document.getElementById("FF").value;
+               var todes=document.getElementById("TT").value;
+                  
+               if(frmS=="tirupati" && todes=="piler"){
+                    window.open('d1.html');
+               }  
+               else if(frmS=="tirupati" && todes=="nellore"){
+                    window.open('d2.html');
+               }
+               else if(frmS=="tirupati" && todes=="piler"){
+                    window.open('d3.html');
+               }
+
+               else{
+                   alert('enter valid source and destination');
+               }
+
+           }
+       </script>
+   </body>
+</html>
